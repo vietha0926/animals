@@ -1,4 +1,4 @@
-package com.singtel.test;
+package com.singtel.animal;
 
 public class Chicken extends Bird {
     private String type;

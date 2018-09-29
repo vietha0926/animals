@@ -32,4 +32,5 @@ parrot.getLiveNear(new Duck());
 Parrot parrot = new Parrot();
 parrot.getLiveNear(new Phone());
 ```
-
+## Question B
+- We can create a new interface Swimmable to model the ability to swim. So that a Dolphin will be Swimmable, but a Dolphin is not a Fish

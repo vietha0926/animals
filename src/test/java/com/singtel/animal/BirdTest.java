@@ -1,4 +1,4 @@
-package com.singtel.test;
+package com.singtel.animal;
 
 import org.junit.After;
 import org.junit.Before;

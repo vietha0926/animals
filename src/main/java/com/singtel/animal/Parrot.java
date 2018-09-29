@@ -1,4 +1,4 @@
-package com.singtel.test;
+package com.singtel.animal;
 
 public class Parrot extends Bird {
     private SoundMaker liveNear;
