@@ -37,3 +37,42 @@ parrot.getLiveNear(new Phone());
 ## Question D
 - Model abilities by interfaces Flyable, SoundMakable, Swimmable and Walkable
 - Model the transformation of an insect by ENUM InsectLifecycle
+## Question D
+- Class hierarchy of the system is as follows
+![Class hierarchy](images/ObjectHierarchy.jpg "Class hierarchy")
+- To count the number of objects, please see the solution at Solution class
+```
+        Object[] objects = new Object[]{
+                new Bird(),
+                new Duck(),
+                new Chicken(),
+                new Parrot(),
+                new Fish(),
+                new Shark(),
+                new Clownfish(),
+                new Dolphin(),
+                new Dog(),
+                new Butterfly(),
+                new Cat()
+        };
+        int[] counts = new int[4];
+        Arrays.fill(counts, 0);
+        Arrays.stream(objects).forEach(object -> {
+            if (object instanceof Flyable){
+                counts[0] ++;
+            }
+            if (object instanceof Walkable){
+                counts[1] ++;
+            }
+            if (object instanceof SoundMakable){
+                counts[2] ++;
+            }
+            if (object instanceof Swimmable){
+                counts[3] ++;
+            }
+        });
+        System.out.println("Number of animals that can fly " + counts[0]);
+        System.out.println("Number of animals that can walk " + counts[1]);
+        System.out.println("Number of animals that can sing " + counts[2]);
+        System.out.println("Number of animals that can swim " + counts[3]);
+```
