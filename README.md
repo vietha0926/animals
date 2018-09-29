@@ -15,4 +15,8 @@ By following principles of encapsulation, inheritance and polymorphism
 - Create Duck and Chicken classes extending Bird class
 - For Duck class, override method sing() and create a new method swim()
 - For Chicken, override methods sing() and fly()
+## Question A3
+- A straightforward way is to create a new class Rooster
+- It extends Chicken class, then overrides method sing()
+- Another way is to create a new field "type" in Chicken class. Then implementing sing method depending on the type.
 
