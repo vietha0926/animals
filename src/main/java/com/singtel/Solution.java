@@ -1,4 +1,4 @@
-package com.singtel.animal;
+package com.singtel;
 
 import com.singtel.animal.Bird;
 import com.singtel.animal.Chicken;

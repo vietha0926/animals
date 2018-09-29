@@ -1,6 +1,8 @@
 package com.singtel.animal;
 
-public class Duck extends Bird {
+import com.singtel.ability.Swimmable;
+
+public class Duck extends Bird implements Swimmable {
     @Override
     public void sing(){
         System.out.println("Quack, quack");

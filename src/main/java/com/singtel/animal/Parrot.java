@@ -1,20 +1,22 @@
 package com.singtel.animal;
 
-public class Parrot extends Bird {
-    private SoundMaker liveNear;
+import com.singtel.ability.SoundMakable;
 
-    public Parrot(SoundMaker liveNear) {
+public class Parrot extends Bird {
+    private SoundMakable liveNear;
+
+    public Parrot(SoundMakable liveNear) {
         this.liveNear = liveNear;
     }
 
     public Parrot() {
     }
 
-    public SoundMaker getLiveNear() {
+    public SoundMakable getLiveNear() {
         return liveNear;
     }
 
-    public void setLiveNear(SoundMaker liveNear) {
+    public void setLiveNear(SoundMakable liveNear) {
         this.liveNear = liveNear;
     }
 

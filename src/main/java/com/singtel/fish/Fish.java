@@ -1,6 +1,8 @@
 package com.singtel.fish;
 
-public class Fish implements Swimmable{
+import com.singtel.ability.Swimmable;
+
+public class Fish implements Swimmable {
     static enum FishSize {
         LARGE, MEDIUM, SMALL, TINY;
     }

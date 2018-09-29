@@ -34,3 +34,6 @@ parrot.getLiveNear(new Phone());
 ```
 ## Question B
 - We can create a new interface Swimmable to model the ability to swim. So that a Dolphin will be Swimmable, but a Dolphin is not a Fish
+## Question D
+- Model abilities by interfaces Flyable, SoundMakable, Swimmable and Walkable
+- Model the transformation of an insect by ENUM InsectLifecycle

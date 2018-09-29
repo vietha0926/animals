@@ -1,6 +1,8 @@
 package com.singtel.animal;
 
-public class Bird extends Animal {
+import com.singtel.ability.Flyable;
+
+public class Bird extends Animal implements Flyable {
     public void fly(){
         System.out.println("I am flying");
     }
