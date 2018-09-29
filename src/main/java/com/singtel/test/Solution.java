@@ -6,5 +6,8 @@ public class Solution {
         bird.walk();
         bird.fly();
         bird.sing();
+        Parrot parrot = new Parrot();
+        parrot.setLiveNear(new Chicken("Rooster"));
+        parrot.sing();
     }
 }

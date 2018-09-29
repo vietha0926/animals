@@ -19,4 +19,17 @@ By following principles of encapsulation, inheritance and polymorphism
 - A straightforward way is to create a new class Rooster
 - It extends Chicken class, then overrides method sing()
 - Another way is to create a new field "type" in Chicken class. Then implementing sing method depending on the type.
+## Question A4
+- In order to make Parrot maintainable, we model an object that can create sound by interface SoundMaker. Animal class will implement this interface.
+Then in Parrot class, we have a field "liveNear" that is a SoundMaker.
+- If we need another parrot lives near a Duck, the following snippet can be used
+```
+Parrot parrot = new Parrot();
+parrot.getLiveNear(new Duck());
+```
+- If we need another parrot lives near a phone that rings frequently, we can create a new class like Phone that implements SoundMaker then create a new parrot like
+```
+Parrot parrot = new Parrot();
+parrot.getLiveNear(new Phone());
+```
 
