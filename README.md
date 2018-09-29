@@ -1,4 +1,4 @@
-# Project source code for Singtel coding challenge
+# A coding challenge to illustrate the ability to model the world
 Using maven to manage the project. Using the following command to run the tests and build the app
 ```
 mvn clean install
@@ -11,4 +11,8 @@ By following principles of encapsulation, inheritance and polymorphism
 - Make Animal an abstract class
 - Make methods of Animal class protected
 - Make fly/sing methods of Bird class public
+## Question A2
+- Create Duck and Chicken classes extending Bird class
+- For Duck class, override method sing() and create a new method swim()
+- For Chicken, override methods sing() and fly()
 
